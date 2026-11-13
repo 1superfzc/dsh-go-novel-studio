@@ -1,0 +1,143 @@
+{
+  "name": "local-novel",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "description": "dsh-go 原生写小说工作台：蒸馏母本语感、分块写作、AI 味体检。",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-go",
+    "deepseek-harness",
+    "dshGo",
+    "novel",
+    "writing"
+  ],
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USER/local-novel.git"
+  },
+  "author": "YG",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "写小说",
+      "en": "Novel studio"
+    },
+    "icon": "write",
+    "wants": [
+      "message"
+    ],
+    "contributes": {
+      "panels": [
+        {
+          "id": "studio",
+          "title": {
+            "zh": "写小说",
+            "en": "Novel"
+          },
+          "icon": "write",
+          "placement": [
+            "features",
+            "chat.panel"
+          ],
+          "presentation": "page"
+        },
+        {
+          "id": "settings",
+          "title": {
+            "zh": "母本设置",
+            "en": "Corpus"
+          },
+          "icon": "settings",
+          "placement": [
+            "features",
+            "chat.panel"
+          ],
+          "presentation": "page"
+        },
+        {
+          "id": "ai",
+          "title": {
+            "zh": "AI创作",
+            "en": "AI studio"
+          },
+          "icon": "sparkle",
+          "placement": [
+            "features",
+            "chat.panel"
+          ],
+          "presentation": "page"
+        },
+        {
+          "id": "library",
+          "title": {
+            "zh": "资料库",
+            "en": "Library"
+          },
+          "icon": "folder",
+          "placement": [
+            "features",
+            "chat.panel"
+          ],
+          "presentation": "page"
+        }
+      ],
+      "composer.actions": [
+        {
+          "id": "open-studio",
+          "label": {
+            "zh": "写作台",
+            "en": "Studio"
+          },
+          "icon": "write",
+          "effect": {
+            "type": "open",
+            "page": "panel:studio"
+          }
+        }
+      ],
+      "composer.strip": [
+        {
+          "id": "today",
+          "icon": "write",
+          "text": "今日 0 字",
+          "panel": "studio"
+        }
+      ],
+      "message.actions": [
+        {
+          "id": "save-chapter",
+          "label": {
+            "zh": "存进本章",
+            "en": "To chapter"
+          },
+          "icon": "download"
+        },
+        {
+          "id": "check-reply",
+          "label": {
+            "zh": "体检",
+            "en": "Check"
+          },
+          "icon": "check"
+        }
+      ]
+    }
+  }
+}
