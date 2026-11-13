@@ -18,9 +18,8 @@
 插件名：dsh-go-novel-studio
 中文名：写小说
 一句话：dsh-go 手机端 AI 小说工作站——母本风格蒸馏、分块写作、AI 味体检、人物/伏笔/世界观资料库、WebDAV 备份
-npm：https://www.npmjs.com/package/dsh-go-novel-studio
-GitHub：https://github.com/USER/dsh-go-novel-studio
-安装：dsh plugin --profile web add dsh-go-novel-studio
+GitHub：https://github.com/1superfzc/dsh-go-novel-studio
+安装：dsh plugin --profile web add github:1superfzc/dsh-go-novel-studio
 
 市场条目：
 <粘贴 market-entry.json 全文>

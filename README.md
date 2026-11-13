@@ -99,6 +99,14 @@
 - 处理函数 3 秒超时 → WebDAV 走 deferred（pending，45 秒）
 - 章节列表单页 ≤50 条；面板 ≤120 组件 / 32 KiB
 
+## 安装
+
+```sh
+dsh plugin --profile web add github:1superfzc/dsh-go-novel-studio
+```
+
+仓库：https://github.com/1superfzc/dsh-go-novel-studio
+
 ## 改完代码
 
 ```sh
