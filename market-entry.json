@@ -1,0 +1,24 @@
+{
+  "name": "dsh-go-novel-studio",
+  "title": {
+    "zh": "写小说",
+    "en": "Novel studio"
+  },
+  "description": {
+    "zh": "dsh-go 手机端 AI 小说工作站：母本风格蒸馏、分块写作、AI 味体检、人物伏笔资料库、WebDAV 备份",
+    "en": "AI novel studio for dsh-go"
+  },
+  "metadata": {
+    "category": "tools"
+  },
+  "versions": [
+    {
+      "version": "0.7.0",
+      "publishTimestamp": 1794566116,
+      "source": {
+        "type": "npm",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  ]
+}

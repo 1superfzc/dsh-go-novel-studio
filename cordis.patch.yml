@@ -1,4 +1,4 @@
 # id: any unique id; name: must equal "name" in package.json.
 - insert:
-    - id: local-novel
-      name: local-novel
+    - id: dsh-go-novel-studio
+      name: dsh-go-novel-studio
