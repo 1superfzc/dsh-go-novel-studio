@@ -1,6 +1,6 @@
 {
   "name": "dsh-go-novel-studio",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "type": "module",
   "main": "lib/index.js",
   "description": "dsh-go 原生写小说工作台：蒸馏母本语感、分块写作、AI 味体检。",
